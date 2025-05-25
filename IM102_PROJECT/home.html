@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Messenger UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+    }
+
+    .messenger-container {
+      max-width: 360px;
+      margin: auto;
+      border: 2px solid black;
+      height: 99vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-radius: 14px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: -26px;
+    }
+
+    .header-icons img {
+      width: 25px;
+      height: 25px;
+      margin-left: 3px;
+      cursor: pointer;
+    }
+
+    .search-bar {
+      background: #e4e4e4;
+      margin: 0 15px;
+      border-radius: 15px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-bar img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      background: transparent;
+      flex-grow: 1;
+      font-size: 14px;
+    }
+
+   
+    .stories {
+      display: flex;
+      overflow-x: hidden;
+      padding: 15px;
+      gap: 10px;
+      flex-wrap: nowrap;
+    }
+
+    .story {
+      text-align: center;
+      width: 60px;
+      flex-shrink: 0;
+    }
+
+    .story img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid gray;
+      object-fit: cover;
+    }
+
+    .story p {
+      font-size: 11px;
+      margin-top: 5px;
+    }
+
+    .chat-list {
+      flex-grow: 1;
+      padding: 0 15px;
+      overflow: hidden;
+    }
+
+    .chat-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 0;
+    }
+
+    .chat-item img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .chat-item p {
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      padding: -4px 0;
+      border-top: 1px solid black;
+      
+    }
+
+    .nav-item {
+      text-align: center;
+      font-size: 12px;
+      color: #333;
+    }
+
+    .nav-item img {
+      width: 25px;
+      height: 25px;
+      display: block;
+      margin: 0 auto -11px;
+    }
+  </style>
+</head>
+<body>
+  <div class="messenger-container">
+    
+    <div class="header">
+      <h2>messenger</h2>
+      <div class="header-icons">
+        <img src="notes.jpeg" alt="note" />
+        <img src="messenger_icon.jpeg" alt="messenger" />
+      </div>
+    </div>
+
+    
+    <div class="search-bar">
+      <img src="meta.png" alt="meta" />
+      <input type="text" placeholder="Ask Meta AI or Search" />
+      <img src="qr.png" alt="qr" />
+    </div>
+
+
+    <div class="stories">
+      <div class="story">
+        <img src="nin.jpeg" alt="Profile" />
+        <p>Your note</p>
+      </div>
+      <div class="story">
+        <img src="abegail.jpeg" alt="Abegail" />
+        <p>Abegail</p>
+      </div>
+      <div class="story">
+        <img src="chinley.jpeg" alt="Chinley" />
+        <p>Chinley</p>
+      </div>
+      <div class="story">
+        <img src="justine.jpeg" alt="Justine" />
+        <p>Justine</p>
+      </div>
+      <div class="story">
+        <img src="abe.jpeg" alt="Abe" />
+        <p>Abe</p>
+      </div>
+    </div>
+
+ 
+    <div class="chat-list">
+      <div class="chat-item">
+        <img src="abegail.jpeg" alt="Abegail" />
+        <p>Abegail Florig</p>
+      </div>
+      <div class="chat-item">
+        <img src="chinley.jpeg" alt="Chinley" />
+        <p>Chinley A. Suan</p>
+      </div>
+      <div class="chat-item">
+        <img src="plastic.jpeg" alt="Plastic" />
+        <p>Plastic_xoxo</p>
+      </div>
+    </div>
+
+
+    <div class="bottom-nav">
+      <div class="nav-item">
+        <img src="chat.png" alt="chat" />
+        <p>Chat</p>
+      </div>
+      <div class="nav-item">
+        <img src="friends.png" alt="friends" />
+        <p>Friends</p>
+      </div>
+      <div class="nav-item">
+        <img src="menu.png" alt="menu" />
+        <p>Menu</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
